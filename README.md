@@ -7,14 +7,39 @@ ExploreUK.
 Copy .env.example to .env and set deploy directory.  Ensure that
 local deploy account sets the following:
 
-* MTL_LOCAL_DIR
-* MTL_REMOTE_DIR
-* MTL_REMOTE_USER
-* MTL_REMOTE_HOST
+* `MTL_LOCAL_DIR`
+* `MTL_REMOTE_DIR`
+* `MTL_REMOTE_USER`
+* `MTL_REMOTE_HOST`
 
 Deploy with
 
 > exe/mtl-deploy.sh
+
+Authentication
+--------------
+
+[This has not yet been written.]
+
+
+Documents
+---------
+
+> GET /metallium/documents/:id
+
+Retrieve the raw JSON for the document referenced by the ARK `:id`.
+
+
+Vocabularies
+------------
+
+> GET /metallium/vocabularies/:id
+
+Retrieve the raw JSON for the vocabulary referenced by the identifier `:id`.
+Currently, Metallium includes one static vocabulary, `format`, but it is
+anticipated that this vocabulary will be editable and other vocabularies may
+be added.
+
 
 Licenses
 --------
